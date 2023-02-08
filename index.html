@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | News homepage</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+    <div class="topo">
+    <div class="logo">
+      <img src="./assets/images/logo.svg" alt="" class="imgLogo">
+    </div>
+      <div class="menu">
+        <p class="navegar" onclick="link(0)">Home</p>
+        <p class="navegar" onclick="link(1)">New</p>
+        <p class="navegar" onclick="link(2)">Popular</p>
+        <p class="navegar" onclick="link(3)">Trending</p>
+        <p class="navegar" onclick="link(4)">Categories</p>
+      </div>
+    </div>
+    <div class="meio">
+    <div class="mLeft">
+      <div class="web3">
+        <img src="./assets/images/image-web-3-desktop.jpg" alt="" class="imgWeb">
+      </div>
+      <div class="mFinal">
+      <div class="mtitle">
+        <p class="mtitleP"> The Bright Future of Web 3.0?</p>
+        </div>
+        <div class="mtext">
+          <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+          But is it really fulfilling its promise?</p>
+
+           <a class="consultar" onclick="consult()">Read more</a>
+        </div>
+    </div>
+    </div>
+    <div class="mRigth">
+      <div class="cardRigth">  
+        <div class="titleRigth"> New </div>
+
+        <p class="miniTitle" onclick="newNoticia(0)"> Hydrogen VS Electric Cars</p>
+        <p class="miniSubTitle" > Will hydrogen-fueled cars ever catch up to EVs?</p>
+        <hr>
+        <p class="miniTitle" onclick="newNoticia(1)"> The Downsides of AI Artistry</p>
+        <p class="miniSubTitle"> What are the possible adverse effects of on-demand AI image generation?</p>
+        <hr>
+        <p class="miniTitle" onclick="newNoticia(2)"> Is VC Funding Drying Up?</p>
+        <p class="miniSubTitle"> Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+      </div>
+    </div>
+    </div>
+  <div class="final">
+    <div class="box">
+      <img src="./assets/images/image-retro-pcs.jpg" alt="" class="imgFinal">
+      <div class="box1">
+        <div class="numberBox">01</div>
+         <div class="titleBox" onclick="box(0)"> Reviving Retro PCs</div>
+         <div class="textBox"> What happens when old PCs are given modern upgrades?</div>
+      </div>
+      </div>
+    <div class="box">
+      <img src="./assets/images/image-top-laptops.jpg" alt="" class="imgFinal">
+      <div class="box1">
+        <div class="numberBox">02</div>
+        <div class="titleBox" onclick="box(1)">Top 10 Laptops of 2022</div>
+        <div class="textBox">Our best picks for various needs and budgets.</div>
+        </div>
+    </div>
+    <div class="box">
+        <img src="./assets/images/image-gaming-growth.jpg" alt="" class="imgFinal">
+        <div class="box1">
+          <div class="numberBox">03</div>
+          <div class="titleBox" onclick="box(2)">The Growth of Gaming</div>
+          <div class="textBox">How the pandemic has sparked fresh opportunities.</div>
+        </div>
+      </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/ThayrinneLima">ThayrinneLima</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
